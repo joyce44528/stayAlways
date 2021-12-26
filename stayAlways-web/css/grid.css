@@ -1,0 +1,278 @@
+ 
+ /* 格線系統 */
+ .container {
+    margin: auto;
+    max-width: 1400px;
+    padding: 0 10px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+
+  [class*="col-"] {
+    padding: 0 1rem;
+    margin: 1% 0;
+  }
+
+  .col-1 {
+    width: 8.333333%;
+  }
+  .col-2 {
+    width: 16.666666%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.3333%;
+  }
+  .col-5 {
+    width: 41.6667%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.3333%;
+  }
+  .col-8 {
+    width: 66.6667%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.3333%;
+  }
+  .col-11 {
+    width: 91.6667%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+
+  /* 平板直up */
+  @media screen and (min-width: 768px) {
+    .col-md-1 {
+      width: 8.333333%;
+    }
+    .col-md-2 {
+      width: 16.666666%;
+    }
+    .col-md-3 {
+      width: 25%;
+    }
+    .col-md-4 {
+      width: 33.3333%;
+    }
+    .col-md-5 {
+      width: 41.6667%;
+    }
+    .col-md-6 {
+      width: 50%;
+    }
+    .col-md-7 {
+      width: 58.3333%;
+    }
+    .col-md-8 {
+      width: 64.6667%;
+    }
+    .col-md-9 {
+      width: 75%;
+    }
+    .col-md-10 {
+      width: 83.3333%;
+    }
+    .col-md-11 {
+      width: 91.6667%;
+    }
+    .col-md-12 {
+      width: 100%;
+    }
+  }
+
+  /* 平板橫up */
+  @media screen and (min-width: 992px) {
+    .col-lg-1 {
+      width: 8.333333%;
+    }
+    .col-lg-2 {
+      width: 16.666666%;
+    }
+    .col-lg-3 {
+      width: 25%;
+    }
+    .col-lg-4 {
+      width: 33.3333%;
+    }
+    .col-lg-5 {
+      width: 41.6667%;
+    }
+    .col-lg-6 {
+      width: 50%;
+    }
+    .col-lg-7 {
+      width: 58.3333%;
+    }
+    .col-lg-8 {
+      width: 64.6667%;
+    }
+    .col-lg-9 {
+      width: 75%;
+    }
+    .col-lg-10 {
+      width: 83.3333%;
+    }
+    .col-lg-11 {
+      width: 91.6667%;
+    }
+    .col-lg-12 {
+      width: 100%;
+    }
+  }
+
+  /* 桌機 */
+  @media screen and (min-width: 1200px) {
+    .col-xl-1 {
+      width: 8.333333%;
+    }
+    .col-xl-2 {
+      width: 16.666666%;
+    }
+    .col-xl-3 {
+      width: 25%;
+    }
+    .col-xl-4 {
+      width: 33.3333%;
+    }
+    .col-xl-5 {
+      width: 41.6667%;
+    }
+    .col-xl-6 {
+      width: 50%;
+    }
+    .col-xl-7 {
+      width: 58.3333%;
+    }
+    .col-xl-8 {
+      width: 64.6667%;
+    }
+    .col-xl-9 {
+      width: 75%;
+    }
+    .col-xl-10 {
+      width: 83.3333%;
+    }
+    .col-xl-11 {
+      width: 91.6667%;
+    }
+    .col-xl-12 {
+      width: 100%;
+    }
+  }
+
+[class*="row-cols"] > .col {
+    padding: 10px;
+}
+
+.row-cols-1 > div {
+    width: 100%;
+}
+.row-cols-2 > div {
+    width: 50%;
+}
+.row-cols-3 > div {
+    width: 33.333333%;
+}
+.row-cols-4 > div {
+    width: 25%;
+}
+.row-cols-5 > div {
+    width: 20%;
+}
+.row-cols-6 > div {
+    width: 16.666666%;
+}
+
+/* RWD */
+@media screen and (min-width: 768px) {
+
+    .row-cols-md-1 > div {
+    width: 100%;
+    }
+    .row-cols-md-2 > div {
+        width: 50%;
+    }
+    .row-cols-md-3 > div {
+        width: 33.333333%;
+    }
+    .row-cols-md-4 > div {
+        width: 25%;
+    }
+    .row-cols-md-5 > div {
+        width: 20%;
+    }
+    .row-cols-md-6 > div {
+        width: 16.666666%;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .row-cols-lg-1 > div {
+        width: 100%;
+    }
+    .row-cols-lg-2 > div {
+        width: 50%;
+    }
+    .row-cols-lg-3 > div {
+        width: 33.333333%;
+    }
+    .row-cols-lg-4 > div {
+        width: 25%;
+    }
+    .row-cols-lg-5 > div {
+        width: 20%;
+    }
+    .row-cols-lg-6 > div {
+        width: 16.666666%;
+    }
+
+}
+
+@media screen and (mix-width: 1200px) {
+    .row-cols-xl-1 > div {
+        width: 100%;
+    }
+    .row-cols-xl-2 > div {
+        width: 50%;
+    }
+    .row-cols-xl-3 > div {
+        width: 33.333333%;
+    }
+    .row-cols-xl-4 > div {
+        width: 25%;
+    }
+    .row-cols-xl-5 > div {
+        width: 20%;
+    }
+    .row-cols-xl-6 > div {
+        width: 16.666666%;
+    }
+
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-start {
+    justify-content: start;
+}
+
+.justify-content-end {
+    justify-content: end;
+}

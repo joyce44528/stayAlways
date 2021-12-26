@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品總覽</title>
+
+    <link rel="stylesheet" href="css/nomalize.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="module" src="app/js/app.js"></script>
+</head>
+<body>
+    <div class="header-wrap inside-header inside-header--product">
+         <!-- navbar -->
+         <div class="navbar">
+            <a href="home.html" class="navbar-logo">
+                <img src="imgs/SVG/logo.svg" alt="logo-img">
+            </a>
+            <ul>
+                <li class="navbar-list">
+                    <a href="cart.html" class="navbar-link">
+                        <img src="imgs/SVG/cart.svg" alt="cart-icon">
+                        <span class="navbar-tag">購物車</span>
+                    </a>
+                </li>
+                <li class="navbar-list">
+                    <a href="products.html" class="navbar-link">
+                        <img src="imgs/SVG/shop.svg" alt="shop-icon">
+                        <span class="navbar-tag">商品</span>
+                    </a>
+                </li>
+                <li class="navbar-list">
+                    <a href="login.html" class="navbar-link">
+                        <img src="imgs/SVG/person.svg" alt="member-icon">
+                        <span class="navbar-tag">會員</span>
+                    </a>
+                </li>
+                <li class="navbar-list">
+                    <div class="nav-btn">
+                        <a href="##" class="nav-toggle">
+                            <span class="nav-label">
+                                <span class="nav-font nav-font--open">
+                                    <span>M</span>
+                                    <span>E</span>
+                                    <span>N</span>
+                                    <span>U</span>
+                                </span>
+                                <span class="nav-font nav-font--close">
+                                    <span>C</span>
+                                    <span>L</span>
+                                    <span>O</span>
+                                    <span>S</span>
+                                    <span>E</span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- main-nav -->
+        <div class="nav-wrap">
+            <nav class="main-nav cols-1-of-2">
+                <ul class="nav-list">
+                    <li class="nav-li">
+                        <a href="home.html" class="nav-link">Home / <span>首頁</span></a>
+                    </li>
+                    <li class="nav-li  nav-li--active">
+                        <a href="products.html" class="nav-link">Products / <span>產品總覽</span></a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="##" class="nav-link">Floral Blog / <span>花誌</span></a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="about.html" class="nav-link">About / <span>關於</span></a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="contact.html" class="nav-link"> Contact us / <span>聯絡我們</span></a>
+                    </li>
+                </ul>
+                <ul class="nav-icon">
+                   <li class="nav-li nav-li--icon">
+                       <a href="cart.html">
+                           <img src="imgs/SVG/cart.svg" alt="cart-icon">
+                       </a>
+                   </li>
+                   <li class="nav-li nav-li--icon">
+                    <a href="login.html">
+                        <img src="imgs/SVG/person.svg" alt="cart-icon">
+                    </a>
+                </li>
+                </ul>
+            </nav>
+            <div class="nav-img cols-1-of-2">
+                <img src="imgs/nav-home.jpeg" alt="">
+            </div>
+        </div>
+        <!-- banner -->
+        <header class="banner inside-banner">
+            <h1 class="heading-primary inside-title">
+               商品總覽
+               <span>Products</span>
+            </h1>
+        </header>
+    </div>
+  
+    <main>
+        <!-- product-all-->
+        <section class="product-all">
+            <ul class="side-assort cols-1-of-4">
+                <li class="side-list">
+                    <button class="side-btn side-btn--active">全部 / All</button>
+                </li>
+                <li class="side-list">
+                    <button class="side-btn">桌花 / Table Flower</button>
+                    <ul class="side-assort--second">
+                        <li>
+                            <button class="side-btn--second">小型</button>
+                        </li>
+                        <li>
+                            <button class="side-btn--second">中型</button>
+                        </li>
+                        <li>
+                            <button class="side-btn--second">大型</button>
+                        </li>
+                    </ul>
+                </li>
+                <li class="side-list">
+                    <button class="side-btn">花束 / Bouquet</button>
+                    <ul class="side-assort--second">
+                        <li>
+                            <button class="side-btn--second">裸花束</button>
+                        </li>
+                        <li>
+                            <button class="side-btn--second">布花束</button>
+                        </li>
+                    </ul>
+                </li>
+                <li class="side-list">
+                    <button class="side-btn">造型裝飾 / Decoration</button>
+                </li>
+                <li class="side-list">
+                    <button class="side-btn">卡片 / Card</button>
+                    <ul class="side-assort--second">
+                        <li>
+                            <button class="side-btn--second">生日 / 萬用卡</button>
+                        </li>
+                        <li>
+                            <button class="side-btn--second">邀請函</button>
+                        </li>
+                    </ul>
+                </li>
+                
+            </ul>
+            <ul class="products cols-3-of-4" id="products-container">
+                <!-- 產品一 -->
+                <li class="product-card">
+                    <a href="product-single.html" class="product-img">
+                        <img src="imgs/product-1-square.jpeg" alt="純白飛鳥草">
+                        <button class="btn add-cart add-cart--product">
+                            <img src="imgs/SVG/cart.svg" alt="shop cart icon">
+                        </button>
+                    </a>
+                    <div class="card-txt">
+                     
+                        <a href="##" class="card-tag">桌花</a>
+                         
+                        <a href="##" class="card-tag">小型桌花</a>
+                          
+                        <a class="card-title">純白飛鳥草</a>
+                        <div class="card-detail">
+                            <a class="card-color"></a>
+                            <div class="card-price">NT $200</div>
+                        </div>
+                    </div>
+                </li>
+                <!-- 產品二 -->
+                <li class="product-card">
+                    <a href="product-single.html" class="product-img">
+                        <img src="imgs/product-2-square.jpeg" alt="白白綿綿">
+                        <button class="btn add-cart add-cart--product">
+                            <img src="imgs/SVG/cart.svg" alt="shop cart icon">
+                        </button>
+                    </a>
+                    <div class="card-txt">
+                     
+                        <a href="##" class="card-tag">桌花</a>
+                         
+                        <a href="##" class="card-tag">中型桌花</a>
+                          
+                        <a class="card-title">白白綿綿</a>
+                        <div class="card-detail">
+                            <a class="card-color"></a>
+                            <div class="card-price">NT $550</div>
+                        </div>
+                    </div>
+                </li>
+                <!-- 產品三 -->
+                <li class="product-card">
+                    <a href="product-single.html" class="product-img">
+                        <img src="imgs/product-3-square.jpeg" alt="秋穫">
+                        <button class="btn add-cart add-cart--product">
+                            <img src="imgs/SVG/cart.svg" alt="shop cart icon">
+                        </button>
+                    </a>
+                    <div class="card-txt">
+                     
+                        <a href="##" class="card-tag">桌花</a>
+                         
+                        <a href="##" class="card-tag">大型桌花</a>
+                          
+                        <a class="card-title">秋穫</a>
+                        <div class="card-detail">
+                            <a class="card-color"></a>
+                            <div class="card-price">NT $1200</div>
+                        </div>
+                    </div>
+                </li>
+                <!-- 產品四 -->
+                <li class="product-card">
+                    <a href="product-single.html" class="product-img">
+                        <img src="imgs/product-4-square.jpg" alt="浪漫粉裸花束">
+                        <button class="btn add-cart add-cart--product">
+                            <img src="imgs/SVG/cart.svg" alt="shop cart icon">
+                        </button>
+                    </a>
+                    <div class="card-txt">
+                     
+                        <a href="##" class="card-tag">花束</a>
+                         
+                        <a href="##" class="card-tag">裸花束</a>
+                          
+                        <a class="card-title">浪漫粉裸花束</a>
+                        <div class="card-detail">
+                            <a class="card-color"></a>
+                            <div class="card-price">NT $420</div>
+                        </div>
+                    </div>
+                </li>
+                <!-- 產品五 -->
+                <li class="product-card">
+                    <a href="product-single.html" class="product-img">
+                        <img src="imgs/product-5-square.jpeg" alt="白色系小桌花組">
+                        <button class="btn add-cart add-cart--product">
+                            <img src="imgs/SVG/cart.svg" alt="shop cart icon">
+                        </button>
+                    </a>
+                    <div class="card-txt">
+                     
+                        <a href="##" class="card-tag">桌花</a>
+                         
+                        <a href="##" class="card-tag">小型桌花</a>
+                          
+                        <a class="card-title">白色系小桌花組</a>
+                        <div class="card-detail">
+                            <a class="card-color"></a>
+                            <div class="card-price">NT $1000</div>
+                        </div>
+                    </div>
+                </li>
+                <!-- 產品六 -->
+                <li class="product-card">
+                    <a href="product-single.html" class="product-img">
+                        <img src="imgs/product-6-square.jpg" alt="藍金璀璨">
+                        <button class="btn add-cart add-cart--product">
+                            <img src="imgs/SVG/cart.svg" alt="shop cart icon">
+                        </button>
+                    </a>
+                    <div class="card-txt">
+                     
+                        <a href="##" class="card-tag">桌花</a>
+                         
+                        <a href="##" class="card-tag">小型桌花</a>
+                          
+                        <a class="card-title">藍金璀璨</a>
+                        <div class="card-detail">
+                            <a class="card-color"></a>
+                            <div class="card-price">NT $700</div>
+                        </div>
+                    </div>
+                </li>
+                <!-- 產品七 -->
+                <li class="product-card">
+                    <a href="product-single.html" class="product-img">
+                        <img src="imgs/product-7-square.jpeg" alt="疫情下的美好思索">
+                        <button class="btn add-cart add-cart--product">
+                            <img src="imgs/SVG/cart.svg" alt="shop cart icon">
+                        </button>
+                    </a>
+                    <div class="card-txt">
+                     
+                        <a href="##" class="card-tag">桌花</a>
+                         
+                        <a href="##" class="card-tag">中型桌花</a>
+                          
+                        <a class="card-title">疫情下的美好思索</a>
+                        <div class="card-detail">
+                            <a class="card-color"></a>
+                            <div class="card-price">NT $2000</div>
+                        </div>
+                    </div>
+                </li>
+                <!-- 產品八 -->
+                <li class="product-card">
+                    <a href="product-single.html" class="product-img">
+                        <img src="imgs/product-8-square.jpg" alt="小穗花封蠟信封">
+                        <button class="btn add-cart add-cart--product">
+                            <img src="imgs/SVG/cart.svg" alt="shop cart icon">
+                        </button>
+                    </a>
+                    <div class="card-txt">
+                     
+                        <a href="##" class="card-tag">卡片</a>
+                         
+                        <a href="##" class="card-tag">萬用卡</a>
+                          
+                        <a class="card-title">小穗花封蠟信封</a>
+                        <div class="card-detail">
+                            <a class="card-color"></a>
+                            <div class="card-price">NT $40</div>
+                        </div>
+                    </div>
+                </li>
+                <!-- 產品九 -->
+                <li class="product-card">
+                    <a href="product-single.html" class="product-img">
+                        <img src="imgs/product-9-square.jpeg" alt="散花滿天星">
+                        <button class="btn add-cart add-cart--product">
+                            <img src="imgs/SVG/cart.svg" alt="shop cart icon">
+                        </button>
+                    </a>
+                    <div class="card-txt">
+                     
+                        <a href="##" class="card-tag">桌花</a>
+                         
+                        <a href="##" class="card-tag">小型桌花</a>
+                          
+                        <a class="card-title">散花滿天星</a>
+                        <div class="card-detail">
+                            <a class="card-color"></a>
+                            <div class="card-price">NT $430</div>
+                        </div>
+                    </div>
+                </li>
+                <!-- 產品十 -->
+                <li class="product-card">
+                    <a href="product-single.html" class="product-img">
+                        <img src="imgs/product-11-square.jpg" alt="綠意盎然布花束">
+                        <button class="btn add-cart add-cart--product">
+                            <img src="imgs/SVG/cart.svg" alt="shop cart icon">
+                        </button>
+                    </a>
+                    <div class="card-txt">
+                     
+                        <a href="##" class="card-tag">桌花</a>
+                         
+                        <a href="##" class="card-tag">小型桌花</a>
+                          
+                        <a class="card-title">綠意盎然布花束</a>
+                        <div class="card-detail">
+                            <a class="card-color"></a>
+                            <div class="card-price">NT $620</div>
+                        </div>
+                    </div>
+                </li>
+                <!-- 產品十一 -->
+                <li class="product-card">
+                    <a href="product-single.html" class="product-img">
+                        <img src="imgs/product-12-square.jpg" alt="幸福滿滿喜帖">
+                        <button class="btn add-cart add-cart--product">
+                            <img src="imgs/SVG/cart.svg" alt="shop cart icon">
+                        </button>
+                    </a>
+                    <div class="card-txt">
+                     
+                        <a href="##" class="card-tag">卡片</a>
+                         
+                        <a href="##" class="card-tag">邀請函</a>
+                          
+                        <a class="card-title">幸福滿滿喜帖</a>
+                        <div class="card-detail">
+                            <a class="card-color"></a>
+                            <div class="card-price">NT $150</div>
+                        </div>
+                    </div>
+                </li>
+                <!-- 產品十二 -->
+                <li class="product-card">
+                    <a href="product-single.html" class="product-img">
+                        <img src="imgs/product-13-square.jpg" alt="Door deco">
+                        <button class="btn add-cart add-cart--product">
+                            <img src="imgs/SVG/cart.svg" alt="shop cart icon">
+                        </button>
+                    </a>
+                    <div class="card-txt">
+                     
+                        <a href="##" class="card-tag">造型裝飾</a>
+                          
+                        <a class="card-title">Door deco</a>
+                        <div class="card-detail">
+                            <a class="card-color"></a>
+                            <div class="card-price">NT $450</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+     <!-- footer -->
+     <div class="footer-wrap">
+        <div class="footer-logo">
+            <img src="imgs/SVG/logo-2-bg-dark.svg" alt="footer logo img">
+        </div>
+        <div class="footer-nav">
+            <ul class="cols-1-of-2">
+                <li class="footer-list"> 
+                    <h4 class="footer-title">產品分類</h4>
+                    <a href="products.html" class="footer-link">全部商品</a>
+                    <a href="##" class="footer-link">桌花</a>
+                    <a href="##" class="footer-link">花束</a>
+                    <a href="##" class="footer-link">卡片</a>
+                </li>
+                <li class="footer-list"> 
+                    <h4 class="footer-title">品牌服務</h4>
+                    <a href="about.html" class="footer-link">關於</a>
+                    <a href="contact.html" class="footer-link">聯絡我們</a>
+                </li>
+                <li class="footer-list"> 
+                    <h4 class="footer-title">購物服務</h4>
+                    <a href="##" class="footer-link">購買須知</a>
+                    <a href="##" class="footer-link">物流資訊</a>
+                    <a href="##" class="footer-link">售後服務</a>
+                    <a href="##" class="footer-link">會員資訊</a>
+
+                </li>
+            </ul>
+            <div class="footer-up">
+                <button class="up-btn">&uarr;</button>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <ul>
+                <li class="openprivacy">
+                    <a href="##">人才招募</a>     
+                </li>
+                <li class="openprivacy">
+                    <a href="##">隱私權政策</a>
+                </li>
+            </ul>
+            <div class="copyright">
+                <p>Copyright &copy;Stay Always All Rights Reserved.</p>
+                <p>
+                    本網站為緯育TibaMe前端設計工程師班第71期學員專題作品，本平台僅供學習、展示之用。
+                    <br>
+                    若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理。
+                </p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

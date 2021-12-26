@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/nomalize.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
+     <!-- js -->
+     <script type="module" src="app/js/app.js"></script>
+</head>
+<body>
+    <div class="header-wrap inside-header">
+        <!-- navbar -->
+        <div class="navbar">
+            <a href="home.html" class="navbar-logo">
+                <img src="imgs/SVG/logo.svg" alt="logo-img">
+            </a>
+            <ul>
+                <li class="navbar-list">
+                    <a href="cart.html" class="navbar-link">
+                        <img src="imgs/SVG/cart.svg" alt="cart-icon">
+                        <span class="navbar-tag">購物車</span>
+                    </a>
+                </li>
+                <li class="navbar-list">
+                    <a href="products.html" class="navbar-link">
+                        <img src="imgs/SVG/shop.svg" alt="shop-icon">
+                        <span class="navbar-tag">商品</span>
+                    </a>
+                </li>
+                <li class="navbar-list">
+                    <a href="login.html" class="navbar-link">
+                        <img src="imgs/SVG/person.svg" alt="member-icon">
+                        <span class="navbar-tag">會員</span>
+                    </a>
+                </li>
+                <li class="navbar-list">
+                    <div class="nav-btn">
+                        <a href="##" class="nav-toggle">
+                            <span class="nav-label">
+                                <span class="nav-font nav-font--open">
+                                    <span>M</span>
+                                    <span>E</span>
+                                    <span>N</span>
+                                    <span>U</span>
+                                </span>
+                                <span class="nav-font nav-font--close">
+                                    <span>C</span>
+                                    <span>L</span>
+                                    <span>O</span>
+                                    <span>S</span>
+                                    <span>E</span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- main-nav -->
+        <div class="nav-wrap">
+            <nav class="main-nav cols-1-of-2">
+                <ul class="nav-list">
+                    <li class="nav-li">
+                        <a href="home.html" class="nav-link">Home / <span>首頁</span></a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="products.html" class="nav-link">Products / <span>產品總覽</span></a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="##" class="nav-link">Floral Blog / <span>花誌</span></a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="about.html" class="nav-link">About / <span>關於</span></a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="contact.html" class="nav-link"> Contact us / <span>聯絡我們</span></a>
+                    </li>
+                </ul>
+                <ul class="nav-icon">
+                   <li class="nav-li nav-li--icon nav-li--active">
+                       <a href="cart.html">
+                           <img src="imgs/SVG/cart.svg" alt="cart-icon">
+                       </a>
+                   </li>
+                   <li class="nav-li nav-li--icon">
+                    <a href="login.html">
+                        <img src="imgs/SVG/person.svg" alt="cart-icon">
+                    </a>
+                </li>
+                </ul>
+            </nav>
+            <div class="nav-img cols-1-of-2">
+                <img src="imgs/nav-home.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+   <main>
+       <section class="cart">
+           <div class="row cart-wrap">
+                <div class="cart-more col-12 col-md-3">
+                    <h3 class="heading-tertiary">還有更多商品</h3>
+                    <ul class="row more-wrap">
+                        <!-- 第一個商品 -->
+                        <li class="more-card col-4 col-md-12">
+                            <a href="#" class="product-img">
+                                <img src="imgs/product-13-square.jpg" alt="">
+                                <button class="btn add-cart add-cart--product">
+                                    <img src="imgs/SVG/cart.svg" alt="shop cart icon">
+                                </button>
+                            </a>
+                            <div class="card-txt">
+                                <a href="##" class="card-tag">造型裝飾</a>
+                                <a class="card-title">Door deco</a>
+                                <div class="card-detail">
+                                    <a class="card-color"></a>
+                                    <div class="card-price">NT $450</div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 第二個商品 -->
+                        <li class="more-card col-4 col-md-12">
+                            <a href="#" class="product-img">
+                                <img src="imgs/product-5-square.jpeg" alt="">
+                                <button class="btn add-cart add-cart--product">
+                                    <img src="imgs/SVG/cart.svg" alt="shop cart icon">
+                                </button>
+                            </a>
+                            <div class="card-txt">
+                                <a href="##" class="card-tag">桌花</a>
+                                <a href="##" class="card-tag">小型桌花</a>
+                                <a class="card-title">白色細小桌花組</a>
+                                <div class="card-detail">
+                                    <a class="card-color"></a>
+                                    <div class="card-price">NT $1000</div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 第三個商品 -->
+                        <li class="more-card col-4 col-md-12">
+                            <a href="#" class="product-img">
+                                <img src="imgs/product-8-square.jpg" alt="">
+                                <button class="btn add-cart add-cart--product">
+                                    <img src="imgs/SVG/cart.svg" alt="shop cart icon">
+                                </button>
+                            </a>
+                            <div class="card-txt">
+                                <a href="##" class="card-tag">卡片</a>
+                                <a href="##" class="card-tag">萬用卡</a>
+                                <a class="card-title">小穗花封蠟信封</a>
+                                <div class="card-detail">
+                                    <a class="card-color"></a>
+                                    <div class="card-price">NT $40</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cart-content col-12 col-md-9">
+                     <!-- 購物流程 -->
+                    <ul class="buyflow-list">
+                        <li class="buyflow-item buyflow-item--active">
+                            <div class="buyflow-order">1</div>
+                            <p class="buyflow-info">購物車</p>
+                        </li>
+                        <li class="buyflow-item">
+                            <div class="buyflow-order">2</div>
+                            <p class="buyflow-info">填寫資訊</p>
+                        </li>
+                        <li class="buyflow-item">
+                            <div class="buyflow-order">3</div>
+                            <p class="buyflow-info">確定訂單</p>
+                        </li>
+                        <li class="buyflow-item">
+                            <div class="buyflow-order">4</div>
+                            <p class="buyflow-info">購買完成</p>
+                        </li>
+                    </ul>
+                    <ul class="cart-list">
+                        <!-- 產品一 -->
+                        <li class="cart-item">
+                            <div class="cart-num col-md-2">
+                                <button class="num-btn">-</button>
+                                <input type="number" name="cart-num" value="1">
+                                <button class="num-btn">+</button>
+                            </div>
+                            <a href="##" class="cart-img col-4 col-md-2">
+                                <img src="imgs/product-12-square.jpg" alt="">
+                            </a>
+                            <div class="cart-name">
+                                <h4 class="text-base">幸福滿滿喜帖</h4>
+                            </div>
+                            <p class="cart-price">NT $150</p>
+                            <button class="cancel-btn">X</button>
+                        </li>
+                        <!-- 產品二 -->
+                        <li class="cart-item">
+                            <div class="cart-num col-md-2">
+                                <button class="num-btn">-</button>
+                                <input type="number" name="cart-num" value="1">
+                                <button class="num-btn">+</button>
+                            </div>
+                            <a href="##" class="cart-img col-4 col-md-2">
+                                <img src="imgs/product-6-square.jpg" alt="">
+                            </a>
+                            <div class="cart-name">
+                                <h4 class="text-base">藍金璀璨</h4>
+                            </div>
+                            <p class="cart-price">NT $700</p>
+                            <button class="cancel-btn">X</button>
+                        </li>
+                        <!-- 產品三 -->
+                        <li class="cart-item">
+                            <div class="cart-num col-md-2">
+                                <button class="num-btn">-</button>
+                                <input type="number" name="cart-num" value="1">
+                                <button class="num-btn">+</button>
+                            </div>
+                            <a href="##" class="cart-img col-4 col-md-2">
+                                <img src="imgs/product-1-square.jpeg" alt="">
+                            </a>
+                            <div class="cart-name">
+                                <h4 class="text-base">純白飛鳥草</h4>
+                            </div>
+                            <p class="cart-price">NT $200</p>
+                            <button class="cancel-btn">X</button>
+                        </li>
+                        <!-- 產品四 -->
+                        <li class="cart-item">
+                            <div class="cart-num col-md-2">
+                                <button class="num-btn">-</button>
+                                <input type="number" name="cart-num" value="2">
+                                <button class="num-btn">+</button>
+                            </div>
+                            <a href="##" class="cart-img col-4 col-md-2">
+                                <img src="imgs/product-2-square.jpeg" alt="">
+                            </a>
+                            <div class="cart-name">
+                                <h4 class="text-base">白白綿綿</h4>
+                            </div>
+                            <p class="cart-price">NT $1100</p>
+                            <button class="cancel-btn">X</button>
+                        </li>
+                        <div class="cart-finall">
+                            <button class="empty-btn">清空購物車</button>
+                            <div class="cart-checkout">
+                                <p class="cart-total">NT$2150</p>
+                                <button class="checkout-btn">前往結帳</button>
+                            </div>      
+                       </div>
+                    </ul> 
+                   
+                </div>
+           </div>
+           
+       </section>
+   </main>
+     <!-- footer -->
+     <div class="footer-wrap">
+        <div class="footer-logo">
+            <img src="imgs/SVG/logo-2-bg-dark.svg" alt="footer logo img">
+        </div>
+        <div class="footer-nav">
+            <ul class="cols-1-of-2">
+                <li class="footer-list"> 
+                    <h4 class="footer-title">產品分類</h4>
+                    <a href="products.html" class="footer-link">全部商品</a>
+                    <a href="##" class="footer-link">桌花</a>
+                    <a href="##" class="footer-link">花束</a>
+                    <a href="##" class="footer-link">卡片</a>
+                </li>
+                <li class="footer-list"> 
+                    <h4 class="footer-title">品牌服務</h4>
+                    <a href="about.html" class="footer-link">關於</a>
+                    <a href="contact.html" class="footer-link">聯絡我們</a>
+                </li>
+                <li class="footer-list"> 
+                    <h4 class="footer-title">購物服務</h4>
+                    <a href="##" class="footer-link">購買須知</a>
+                    <a href="##" class="footer-link">物流資訊</a>
+                    <a href="##" class="footer-link">售後服務</a>
+                    <a href="##" class="footer-link">會員資訊</a>
+
+                </li>
+            </ul>
+            <div class="footer-up">
+                <button class="up-btn">&uarr;</button>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <ul>
+                <li class="openprivacy">
+                    <a href="##">人才招募</a>     
+                </li>
+                <li class="openprivacy">
+                    <a href="##">隱私權政策</a>
+                </li>
+            </ul>
+            <div class="copyright">
+                <p>Copyright &copy;Stay Always All Rights Reserved.</p>
+                <p>
+                    本網站為緯育TibaMe前端設計工程師班第71期學員專題作品，本平台僅供學習、展示之用。
+                    <br>
+                    若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理。
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯絡我們</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/nomalize.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
+     <!-- js -->
+     <script type="module" src="app/js/app.js"></script>
+</head>
+<body>
+    <div class="header-wrap inside-header">
+         <!-- navbar -->
+         <div class="navbar">
+            <a href="home.html" class="navbar-logo">
+                <img src="imgs/SVG/logo.svg" alt="logo-img">
+            </a>
+            <ul>
+                <li class="navbar-list">
+                    <a href="cart.html" class="navbar-link">
+                        <img src="imgs/SVG/cart.svg" alt="cart-icon">
+                        <span class="navbar-tag">購物車</span>
+                    </a>
+                </li>
+                <li class="navbar-list">
+                    <a href="products.html" class="navbar-link">
+                        <img src="imgs/SVG/shop.svg" alt="shop-icon">
+                        <span class="navbar-tag">商品</span>
+                    </a>
+                </li>
+                <li class="navbar-list">
+                    <a href="login.html" class="navbar-link">
+                        <img src="imgs/SVG/person.svg" alt="member-icon">
+                        <span class="navbar-tag">會員</span>
+                    </a>
+                </li>
+                <li class="navbar-list">
+                    <div class="nav-btn">
+                        <a href="##" class="nav-toggle">
+                            <span class="nav-label">
+                                <span class="nav-font nav-font--open">
+                                    <span>M</span>
+                                    <span>E</span>
+                                    <span>N</span>
+                                    <span>U</span>
+                                </span>
+                                <span class="nav-font nav-font--close">
+                                    <span>C</span>
+                                    <span>L</span>
+                                    <span>O</span>
+                                    <span>S</span>
+                                    <span>E</span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- main-nav -->
+        <div class="nav-wrap">
+            <nav class="main-nav cols-1-of-2">
+                <ul class="nav-list">
+                    <li class="nav-li">
+                        <a href="home.html" class="nav-link">Home / <span>首頁</span></a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="products.html" class="nav-link">Products / <span>產品總覽</span></a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="##" class="nav-link">Floral Blog / <span>花誌</span></a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="about.html" class="nav-link">About / <span>關於</span></a>
+                    </li>
+                    <li class="nav-li  nav-li--active">
+                        <a href="contact.html" class="nav-link"> Contact us / <span>聯絡我們</span></a>
+                    </li>
+                </ul>
+                <ul class="nav-icon">
+                   <li class="nav-li nav-li--icon">
+                       <a href="cart.html">
+                           <img src="imgs/SVG/cart.svg" alt="cart-icon">
+                       </a>
+                   </li>
+                   <li class="nav-li nav-li--icon">
+                    <a href="login.html">
+                        <img src="imgs/SVG/person.svg" alt="cart-icon">
+                    </a>
+                </li>
+                </ul>
+            </nav>
+            <div class="nav-img cols-1-of-2">
+                <img src="imgs/nav-home.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="contact-wrap">
+            <div class="row contact-header">
+                <div class="contact-image col-6 col-md-2">
+                    <img src="imgs/SVG/flower.svg" alt="">
+                </div>
+                <div class="contact-text col-12 col-md-8">
+                    <h2 class="heading-secondary">
+                        Contact us
+                        <span>聯絡我們</span>
+                    </h2>
+                    <p class="text-base">
+                        有任何服務需求，請隨時與我們聯繫，
+                        <br>
+                        詳細填寫您寶貴的意見以及想法，Stay Always 將誠摯了解您的需求與建言。</p>
+                </div>
+            </div>
+            
+            <div class="row contact-content">
+                <form action="##" class="contact-form col-12 col-md-7">
+                    <div class="row contact-box contact-box--salutation">
+                        <!-- name -->
+                        <div class="name col-12 col-md-6">
+                            <label for="name" class="contact-label">姓名 / Name</label>
+                            <input class="contact-input" type="text" id="name">
+                        </div>
+                        <!-- salu -->
+                        <div class="salu col-12 col-md-4">
+                            <label for="salu" class="contact-label">稱謂 / Salutation</label>
+                            <input class="contact-input" type="text" id="salu">
+                        </div>
+                        <!-- tel -->
+                        <div class="tel col-12 col-md-10">
+                            <label for="tel" class="contact-label">連絡電話 / Tel</label>
+                            <input class="contact-input" type="text" id="tel">
+                        </div>
+                        <!-- email -->
+                        <div class="email col-12 col-md-10">
+                            <label for="email" class="contact-label">電子郵件 / Email</label>
+                            <input class="contact-input" type="text" id="email">
+                        </div>
+                         <!-- topic -->
+                         <div class="topic col-12 col-md-10">
+                             <label class="contact-label" for="topic">請選擇您的主旨 / Topic</label>
+                            <select class="contact-select" id="topic">
+                                <option value=""></option>
+                                <option value="退換貨">退換貨問題</option>
+                                <option value="購物流程">購物流程相關</option>
+                                <option value="商品">商品相關</option>
+                                <option value="其他">其他</option>
+                            </select>
+                         </div>
+                         
+                        <!-- message -->
+                        <div class="tel col-12 col-md-10">
+                            <label for="message" class="contact-label">您的建議內容 / Your message</label>
+                            <textarea class="contact-textarea" cols="20" rows="10" id="message"></textarea>
+                        </div>
+                        <!-- btn -->
+                        <div class="contact-btn col-12 col-md-10">
+                            <button type="reset">重新輸入</button>
+                            <button type="submit">確認送出</button>   
+                        </div>
+                        
+                    </div>
+                </form>
+                <div class="contact-social col-12 col-md-3">
+                    <h3 class="heading-tertiary contact-title">追蹤我們</h3>
+                    <ul class="social-icon">
+                        <li class="social-item">
+                            <a href="##" class="social-link social-link--contact">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="##" class="social-link social-link--contact">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="##" class="social-link social-link--contact">
+                                <i class="bi bi-line"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+      <!-- footer -->
+    <div class="footer-wrap">
+        <div class="footer-logo">
+            <img src="imgs/SVG/logo-2-bg-dark.svg" alt="footer logo img">
+        </div>
+        <div class="footer-nav">
+            <ul class="cols-1-of-2">
+                <li class="footer-list"> 
+                    <h4 class="footer-title">產品分類</h4>
+                    <a href="products.html" class="footer-link">全部商品</a>
+                    <a href="##" class="footer-link">桌花</a>
+                    <a href="##" class="footer-link">花束</a>
+                    <a href="##" class="footer-link">卡片</a>
+                </li>
+                <li class="footer-list"> 
+                    <h4 class="footer-title">品牌服務</h4>
+                    <a href="about.html" class="footer-link">關於</a>
+                    <a href="contact.html" class="footer-link">聯絡我們</a>
+                </li>
+                <li class="footer-list"> 
+                    <h4 class="footer-title">購物服務</h4>
+                    <a href="##" class="footer-link">購買須知</a>
+                    <a href="##" class="footer-link">物流資訊</a>
+                    <a href="##" class="footer-link">售後服務</a>
+                    <a href="##" class="footer-link">會員資訊</a>
+
+                </li>
+            </ul>
+            <div class="footer-up">
+                <button class="up-btn">&uarr;</button>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <ul>
+                <li class="openprivacy">
+                    <a href="##">人才招募</a>     
+                </li>
+                <li class="openprivacy">
+                    <a href="##">隱私權政策</a>
+                </li>
+            </ul>
+            <div class="copyright">
+                <p>Copyright &copy;Stay Always All Rights Reserved.</p>
+                <p>
+                    本網站為緯育TibaMe前端設計工程師班第71期學員專題作品，本平台僅供學習、展示之用。
+                    <br>
+                    若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理。
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
