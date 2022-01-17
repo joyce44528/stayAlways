@@ -1,0 +1,112 @@
+
+.loading-wrapper {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff9e9;
+    transition: .4s ease;
+    transform: translateY(0%);
+    overflow-y: hidden;
+    z-index: 2000;
+    animation: showBgc .6s ease-out;
+    animation-fill-mode: both;
+}
+
+.svg-box::before {
+    position: absolute;
+    left: 0;
+    bottom: 2%;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #898B74;
+    animation: beforeWidth 1s .5s ease-in both;
+}
+  
+  .svg-box {
+    position: relative;
+    width: 30%;
+    min-width: 200px;
+}
+  
+  path {
+    stroke-dasharray: 1800;
+    fill: #898B74;
+    opacity: 10;
+    animation: svgAni 3.5s 1s cubic-bezier(0,.23,1,.01);
+    animation-fill-mode: both;
+  }
+
+
+.hidden {
+    
+      animation: hiddenAni .7s cubic-bezier(0,.23,1,.01);
+      animation-fill-mode: both;
+}
+
+
+
+@keyframes showBgc {
+  0% {
+    background-color: #fffdf7;
+  }
+  100% {
+    background-color: #D6D2C8;
+  }
+
+}
+
+@keyframes hiddenAni {
+    0% {
+        opacity: 1;
+        visibility: visible;
+        background-color: #D6D2C8;
+    }
+
+  
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        z-index: -4;
+    }
+}
+
+@keyframes beforeWidth {
+    0% {
+      opacity: 0;
+      width: 0%;
+    }
+    to {
+      opacity: 1;
+      width: 80%;
+    }
+}
+
+
+@keyframes svgAni {
+    0% {
+      opacity: 0;
+      fill: none;
+      stroke-dashoffset: 1800;
+    }
+    
+    30% {
+      opacity: 10;
+      fill: none;
+      stroke-dashoffset: 1800;
+    }
+    
+    90% {
+      fill: rgba(137,139,116,0);
+    }
+    
+    100% {
+      fill: rgba(137,139,116,1);
+      stroke-dashoffset: 0;
+    }
+}
