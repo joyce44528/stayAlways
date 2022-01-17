@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>純白千鳥草</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/load.css">
+
+</head>
+<body>
+    
+    <div class="container header-wrap main-header">
+        <!-- navbar -->
+        <div class="navbar">
+            <a href="home.html" class="navbar-logo">
+                <img src="imgs/SVG/logo.svg" alt="logo-img">
+            </a>
+            <div class="navbar-box">
+                <ul>
+                    <li class="navbar-list">
+                        <a href="cart.html" class="navbar-link">
+                            <div class="icon-box">
+                                <span class="product-num"></span>
+                                <img src="imgs/SVG/cart.svg" alt="cart-icon">
+                            </div> 
+                            <span class="navbar-tag">購物車</span>
+                        </a>
+                    </li>
+                    <li class="navbar-list">
+                        <a href="products.html" class="navbar-link">
+                            <div class="icon-box">
+                                <img src="imgs/SVG/shop.svg" alt="shop-icon">
+                            </div>   
+                            <span class="navbar-tag">商品</span>
+                        </a>
+                    </li>
+                    <li class="navbar-list">
+                        <a href="login.html" class="navbar-link">
+                            <div class="icon-box">
+                                <img src="imgs/SVG/person.svg" alt="member-icon">
+                            </div>  
+                            <span class="navbar-tag">會員</span>
+                        </a>
+                    </li> 
+                </ul> 
+                <div class="nav-btn">
+                    <button class="nav-toggle">
+                        <span class="nav-label">
+                            <div class="nav-label--bg"></div>
+                            <span class="nav-font nav-font--open">
+                                <span>M</span>
+                                <span>E</span>
+                                <span>N</span>
+                                <span>U</span>
+                            </span>
+                            <span class="nav-font nav-font--close">
+                                <span>C</span>
+                                <span>L</span>
+                                <span>O</span>
+                                <span>S</span>
+                                <span>E</span>
+                            </span>
+                        </span>
+                    </button>
+                </div>
+            </div> 
+        </div>
+        <!-- main-nav -->
+        <div class="row nav-wrap">
+            <nav class="main-nav col-12 col-lg-6">
+                <ul class="nav-ul">
+                    <li class="nav-li nav-li--active">
+                        <a href="home.html" class="nav-link" data-id="home">Home / <span>首頁</span></a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="products.html" class="nav-link" data-id="products">Products / <span>產品總覽</span></a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="allArticles.html" class="nav-link" data-id="floral">Floral Blog / <span>花誌</span></a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="about.html" class="nav-link" data-id="about">About / <span>關於</span></a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="contact.html" class="nav-link" data-id="contact"> Contact us / <span>聯絡我們</span></a>
+                    </li>
+                </ul>
+                <ul class="nav-icon">
+                   <li class="nav-li nav-li--icon">
+                       <a href="cart.html">
+                           <img src="imgs/SVG/cart.svg" alt="cart-icon">
+                       </a>
+                   </li>
+                   <li class="nav-li nav-li--icon">
+                    <a href="login.html">
+                        <img src="imgs/SVG/person.svg" alt="cart-icon">
+                    </a>
+                </li>
+                </ul>
+            </nav>
+            <div class="nav-img col-8 col-lg-5">
+                <div class="images">
+                    <div class="img-box" data-id="home">
+                        <div class="overlay"></div>
+                        <img src="imgs/nav-home-1.jpeg" alt="nav-home img">
+                    </div>
+                    <div class="img-box" data-id="products">
+                        <div class="overlay"></div>
+                        <img src="imgs/nav-products-1.jpeg" alt="nav-home img">
+                    </div>
+                    <div class="img-box" data-id="floral">
+                        <div class="overlay"></div>
+                        <img src="imgs/nav-floral-1.jpeg" alt="nav-home img">
+                    </div>
+                    <div class="img-box" data-id="about">
+                        <div class="overlay"></div>
+                        <img src="imgs/nav-about-1.jpeg" alt="nav-home img">
+                    </div>
+                    <div class="img-box" data-id="contact">
+                        <div class="overlay"></div>
+                        <img src="imgs/nav-contact-1.jpeg" alt="nav-home img">
+                    </div>
+                </div>
+                <div class="images">
+                    <div class="img-box" data-id="home">
+                        <div class="overlay"></div>
+                        <img src="imgs/nav-home-2.jpeg" alt="">
+                    </div>
+                    <div class="img-box" data-id="products">
+                        <div class="overlay"></div>
+                        <img src="imgs/nav-products-2.jpeg" alt="">
+                    </div>
+                    <div class="img-box" data-id="floral">
+                        <div class="overlay"></div>
+                        <img src="https://images.pexels.com/photos/3932735/pexels-photo-3932735.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                    </div>
+                    <div class="img-box" data-id="about">
+                        <div class="overlay"></div>
+                        <img src="imgs/nav-about-2.jpeg" alt="">
+                    </div>
+                    <div class="img-box" data-id="contact">
+                        <div class="overlay"></div>
+                        <img src="imgs/nav-contact-2.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <main>
+        <!-- p-single -->
+        <section class="p-single">
+            <div class="container p-wrap">
+                <!-- 麵包屑 -->
+                <nav class="breadcrumb-wrap">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="home.html" class="breadcrumb-link">首頁</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="products.html" class="breadcrumb-link">商品總覽</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="##" class="breadcrumb-link">桌花</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="product-single.html" class="breadcrumb-link">純白千鳥草</a>
+                        </li>
+                    </ol>
+                </nav>
+                <div class="row single-wrap">
+                    <!-- 產品圖片 -->
+                    <div class="swiper-wrap col-12 col-md-6">
+                        <div class="swiper-slider swiper-slider--active">
+                            <div class="swiper-box">
+                                <!-- 1 -->
+                                <img src="imgs/product-1-square.jpeg" alt="" class="swiper-img">
+                                <!-- 2 -->
+                                <img src="imgs/product-1-square.jpeg" alt="" class="swiper-img">
+                                <!-- 3 -->
+                                <img src="imgs/product-1-square.jpeg" alt="" class="swiper-img">
+                                <!-- 4 -->
+                                <img src="imgs/product-1-square.jpeg" alt="" class="swiper-img">
+                            </div> 
+
+                        </div>
+                        <div class="row swiper-slider swiper-slider--other">
+                            <!-- 第一張 -->
+                            <div class="swiper-slide col-3 col-md-12">
+                                <img src="imgs/product-1-square.jpeg" alt="" class="slide-img" data-order="0">
+                            </div>
+                            <!-- 第二張 -->
+                            <div class="swiper-slide col-3 col-md-12">
+                                <img src="imgs/product-1-square.jpeg" alt="" class="slide-img" data-order="1">
+                            </div>
+                             <!-- 第三張 -->
+                             <div class="swiper-slide col-3 col-md-12">
+                                <img src="imgs/product-1-square.jpeg" alt="" class="slide-img" data-order="2">
+                            </div>
+                             <!-- 第四張 -->
+                             <div class="swiper-slide col-3 col-md-12">
+                                <img src="imgs/product-1-square.jpeg" alt="" class="slide-img" data-order="3">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 產品說明 -->
+                    <div class="single-text col-12 col-md-6">
+                        <div class="single-header">
+                            <h3 class="heading-tertiary single-title">純白千鳥草</h3>
+                            <ul class="single-review">
+                                <li class="review-item">
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li class="review-item">
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li class="review-item">
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li class="review-item">
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="single-detail">
+                            <div class="single-price">NT $500</div>
+                            <p class="single-depiction">
+                                花材:乾燥千鳥草
+                                <br>
+                                花瓶資訊: 陶瓷，白色釉料
+                                <br>
+                                把握相關相冊進攻一直做出發達咱們反映選項微微管理，你有上班祝福拍攝有很多分享這個需求，下載金錢，總。
+                            </p>
+
+                        </div>
+                        <div class="single-input">
+                            <input type="radio" name="deco" id="deco-normal">
+                            <label for="deco-normal">一般包裝</label>
+                            <input type="radio" name="deco" id="deco-gift">
+                            <label for="deco-gift">送禮精美包裝</label>
+                        </div>
+                        <div class="single-cart">
+                            <input type="number" name="add-cart" value="1">
+                            <button class="add-btn">加入購物車</button>
+                        </div>
+                    </div>
+
+                </div>
+                 <!-- tab-explain -->
+                <div class="row explain-wrap">
+                    <div class="explain-btn col-12 col-md-9">
+                        <button class="tab-btn tab-btn--active" data-tab="1">商品規格</button>
+                        <button class="tab-btn" data-tab="2">退換貨須知</button>   
+                    </div>
+                    <div class="explain-content col-12 col-md-9">
+                        <div class="explain-inner explain-inner--active">
+                            在這個警告工藝為此實業表面必然當然出了總算一本，避免分享稿件藝術措施，妻子百姓管理系統這麼和諧節目傳說寫作同一，警察要有和諧城市元素打開奇蹟推坑大魔王負責人，苗栗對外一款眼神房子計算機評價兒子，兩次創建比如畢業隊伍，什麼是合作明天勞動家園，奧客當初發達演。
+                            報名電視台，依據自身記住級別不停來電，死亡其他的保留，農村更多苗栗上升形象是在方案專利零售身材版權相比，電信國有直到提前無限土地難得加油背景，始終湖口，考試以及深刻風景解壓密碼立刻教學馬上衣服文化在於，分公司本類由於篇文章媒體供應，電視台，未知版權所有默。
+                        </div>
+                        <div class="explain-inner">
+                            在這個警告工藝為此實業表面必然當然出了總算一本，避免分享稿件藝術措施，妻子百姓管理系統這麼和諧節目傳說寫作同一，警察要有和諧城市元素打開奇蹟推坑大魔王負責人，苗栗對外一款眼神房子計算機評價兒子，兩次創建比如畢業隊伍，什麼是合作明天勞動家園，奧客當初發達演。
+                        </div>
+
+                    </div>
+                </div>
+                <!-- 你可能會喜歡 -->
+                <div class="row mayLike-wrap">
+                    <h3 class="heading-tertiary col-12">你可能也會喜歡</h3>
+                    <div class="row mayLike-slider">
+                        <div class="slider-box">
+                            <div class="slider-group">
+                                 <!-- slide 1 -->
+                                <div class="card mayLike-item" data-id="4">
+                                    <div class="mayLike-img col-6">
+                                        <img src="imgs/product-4-square.jpg" alt="">
+                                    </div>
+                                    <div class="card-txt mayLike-text">
+                                        <a href="##" class="card-tag">花束</a>
+                                        <a href="##" class="card-tag">裸花束</a>
+                                        <h4 class="card-title">浪漫粉裸花束</h4>
+                                        <div class="card-detail card-detail--mayLike">
+                                            <div class="card-price">NT $420</div>
+                                        </div>
+                                        <button class="btn add-cart add-cart--mayLike">
+                                            <img src="imgs/SVG/cart.svg" alt="shop cart icon">
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- slide 2 -->
+                                <div class="card mayLike-item" data-id="6">
+                                    <div class="mayLike-img col-6">
+                                        <img src="imgs/product-6-square.jpg" alt="">
+                                    </div>
+                                    <div class="card-txt mayLike-text">
+                                        <a href="##" class="card-tag">桌花</a>
+                                        <a href="##" class="card-tag">小型桌花</a>
+                                        <h4 class="card-title">藍金璀璨</h4>
+                                        <div class="card-detail card-detail--mayLike">
+                                            <div class="card-price">NT $700</div>
+                                        </div>
+                                        <button class="btn add-cart add-cart--mayLike">
+                                            <img src="imgs/SVG/cart.svg" alt="shop cart icon">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="slider-group">
+                                <!-- slide 1 -->
+                               <div class="card mayLike-item" data-id="4">
+                                   <div class="mayLike-img col-6">
+                                       <img src="imgs/product-4-square.jpg" alt="">
+                                   </div>
+                                   <div class="card-txt mayLike-text">
+                                       <a href="##" class="card-tag">花束</a>
+                                       <a href="##" class="card-tag">裸花束</a>
+                                       <h4 class="card-title">浪漫粉裸花束</h4>
+                                       <div class="card-detail card-detail--mayLike">
+                                           <div class="card-price">NT $420</div>
+                                       </div>
+                                       <button class="btn add-cart add-cart--mayLike">
+                                           <img src="imgs/SVG/cart.svg" alt="shop cart icon">
+                                       </button>
+                                   </div>
+                               </div>
+                               <!-- slide 2 -->
+                               <div class="card mayLike-item" data-id="6">
+                                   <div class="mayLike-img col-6">
+                                       <img src="imgs/product-6-square.jpg" alt="">
+                                   </div>
+                                   <div class="card-txt mayLike-text">
+                                       <a href="##" class="card-tag">桌花</a>
+                                       <a href="##" class="card-tag">小型桌花</a>
+                                       <h4 class="card-title">藍金璀璨</h4>
+                                       <div class="card-detail card-detail--mayLike">
+                                           <div class="card-price">NT $700</div>
+                                       </div>
+                                       <button class="btn add-cart add-cart--mayLike">
+                                           <img src="imgs/SVG/cart.svg" alt="shop cart icon">
+                                       </button>
+                                   </div>
+                               </div>
+                           </div>
+                        </div>
+                           
+                        <div class="slider-btn slider-btn--mayLike">
+                            <button class="slide-btn slide-btn--mayLike slider-up"></button>
+                            <button class="slide-btn slide-btn--mayLike slider-down"></button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <div class="footer-wrap">
+        <div class="footer-logo">
+            <img src="imgs/SVG/logo-2-bg-dark.svg" alt="footer logo img">
+        </div>
+        <div class="row footer-nav">
+            <ul class="col-12 col-md-8 col-lg-6">
+                <li class="footer-list"> 
+                    <h4 class="footer-title">產品分類</h4>
+                    <a href="products.html" class="footer-link">全部商品</a>
+                    <a href="##" class="footer-link">桌花</a>
+                    <a href="##" class="footer-link">花束</a>
+                    <a href="##" class="footer-link">卡片</a>
+                </li>
+                <li class="footer-list"> 
+                    <h4 class="footer-title">品牌服務</h4>
+                    <a href="about.html" class="footer-link">關於</a>
+                    <a href="contact.html" class="footer-link">聯絡我們</a>
+                </li>
+                <li class="footer-list"> 
+                    <h4 class="footer-title">購物服務</h4>
+                    <a href="##" class="footer-link">購買須知</a>
+                    <a href="##" class="footer-link">物流資訊</a>
+                    <a href="##" class="footer-link">售後服務</a>
+                    <a href="##" class="footer-link">會員資訊</a>
+
+                </li>
+            </ul>
+            <button class="footer-up">
+                <span class="up-btn">&uarr;</span>
+            </button>
+        </div>
+        <div class="footer-copyright">
+            <ul>
+                <li class="openprivacy">
+                    <a href="##">人才招募</a>     
+                </li>
+                <li class="openprivacy">
+                    <a href="##">隱私權政策</a>
+                </li>
+            </ul>
+            <div class="copyright">
+                <p>Copyright &copy;Stay Always All Rights Reserved.</p>
+                <p>
+                    本網站為緯育TibaMe前端設計工程師班第73期學員專題作品，本平台僅供學習、展示之用。
+                    <br>
+                    若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理。
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- js -->
+    <script src="js/app.js"></script>
+    <script src="js/cartSpan.js"></script>
+
+    <script>
+        // tab card
+        function tabCard() {
+
+            const explainBtn = document.querySelector('.explain-btn');
+            const explainInners = document.querySelectorAll('.explain-inner');
+
+            const changeCard = function(e) {
+                
+                [...explainBtn.children].forEach(btn => btn.classList.remove('tab-btn--active'));
+
+                let tar = e.target;
+                tar.classList.add('tab-btn--active');
+
+                if(!(tar.classList.contains('tab-btn'))) return;
+                
+                if(tar.dataset.tab == 1) explainInners.forEach(inner => inner.style.transform = 'translateX(0%)');
+
+                else if(tar.dataset.tab == 2) explainInners.forEach(inner => inner.style.transform = 'translateX(-100%)');
+
+            }
+
+            explainBtn.addEventListener('click',changeCard);
+        }
+
+
+        // vertical slider
+        function vSlider() {
+
+            let curSlide = 0;
+            let maxlength;
+
+            const sliderBtn = document.querySelectorAll('.slide-btn');
+
+            function sliderGo(items,cur) {
+
+                items.forEach(item => item.style.transform = `translateY(${-100 *  curSlide}%)`)
+            }
+
+            
+
+            function sliderMove() {
+                const groups = document.querySelectorAll('.slider-group');
+                const items = document.querySelectorAll('.mayLike-item');
+
+                function maxLength() {
+                    if(window.innerWidth >= 520) {
+
+                        maxlength = groups.length;
+
+                    }else {
+                        maxlength = items.length;
+                    }
+
+                }
+
+                maxLength();
+                window.addEventListener('resize',maxLength);
+
+
+                if(this.classList.contains('slider-up')) {
+
+                    curSlide === 0 ? maxLength - 1 : curSlide-- ;
+
+                    sliderGo(items,curSlide);
+                    
+                }
+
+                else if(this.classList.contains('slider-down')) {
+                    curSlide < maxlength - 1 ? curSlide++ : curSlide = 0;
+
+                    sliderGo(items,curSlide);
+                    
+                }
+            }
+
+            sliderBtn.forEach(btn => btn.addEventListener('click',sliderMove));
+            
+        }
+
+        // img slider
+        function imgSlider() {
+
+            const clickImgs = document.querySelectorAll('.slide-img');
+
+            function swiperImg(e) {
+
+                let tar = e.target;
+                let curOrder = parseInt(tar.dataset.order);
+
+                const slideBox = document.querySelector('.swiper-box');
+                
+                function goSlide() {
+                    slideBox.style.transform = `translateX(-${102 * curOrder}%)`;
+  
+                }
+
+                goSlide();
+                
+            }
+            
+
+            clickImgs.forEach(img => img.addEventListener('click',swiperImg));
+        }
+        
+        function dofirst() {
+            imgSlider();
+            tabCard();
+            vSlider();
+        }
+
+        window.addEventListener('load',dofirst);
+    </script>
+</body>
+</html>
