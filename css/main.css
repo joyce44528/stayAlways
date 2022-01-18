@@ -444,6 +444,10 @@ main {
         flex-direction: column;
         padding: 2rem 0;
     }
+    
+    .nav-link {
+        font-size: 2rem;
+    }
 
     .nav-icon {
         display: flex;
